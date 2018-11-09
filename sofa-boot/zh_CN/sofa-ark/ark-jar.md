@@ -62,7 +62,10 @@
 
                     <!--是否打包、安装和发布 ark biz，详细参考 Ark Biz 文档，默认为false-->
                     <attach>true</attach>
-
+                 
+                    <!--用来指定biz包的启动顺序, 值越小越先启动 默认：100-->
+                    <priority>0</priority>
+                 
                     <!--设置 ark 包的 classifier，默认为空-->
                     <arkClassifier>ark-classifier</arkClassifier>
 
@@ -119,6 +122,8 @@
 + `skip`: 是否跳过执行 goal:repackage，默认为false;
 
 + `attach`: 是否打包、安装和发布 ark biz，详细参考 Ark Biz 文档，默认为false;
+
++ `priority`: 用来指定biz包的启动顺序, 值越小越先启动 默认：100;
 
 + `arkClassifier`: 设置 ark 包的 classifier，默认为空;
 
